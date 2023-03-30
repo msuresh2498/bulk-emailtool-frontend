@@ -1,38 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+}
+
+.AppBar {
+  background-color: #2DD096 !important;
+  color: white !important;
+
+}
+
+.appbar-tools {
+  justify-content: space-between !important;
+}
+
+.Image-container {
+  width: 100%;
+  margin: 0 auto;
+  height: 500px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.home-card-img {
+  background-color: blue;
+  margin: 10px;
+}
+
+.home-email-btn {
+  height: 55px;
+  width: 250px;
+  background-color: #2DD096;
+  color: white;
+  font-size: 15px;
+  border-radius: 35px;
+  font-weight: 600;
+  border: none;
+  margin: 10px;
+}
+
+.home-row1-text {
+  text-align: left;
+  padding: 80px;
+  width: 700px;
+}
+
+.home-row1-image {
+  margin: 50px;
+  width: 700px;
+}
+
+.Image-text {
+  font-size: 75px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.login-form {
+  display: grid;
+  width: 450px;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.login-container {
+  margin: 0 auto;
+}
+
+.login-btns {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  padding: 20px;
+  text-align: left !important;
+}
+
+.login-btn {
+  height: 55px;
+  margin: 10px;
+  background-color: #2DD096;
+  color: white;
+  letter-spacing: 0.1rem;
+  font-size: 15px;
+  border-radius: 35px;
+  font-weight: 600;
+  border: none;
+}
+
+.login-textfield {
+  background-color: whitesmoke;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.login-card {
+  width: 80%;
+  height: fit-content;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px;
+  box-shadow: 5px 10px 15px 10px rgb(222, 219, 219) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.login-text {
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.chart-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+.Bar {
+  width: 700px;
+  height: 900px;
+}
+
+.Line-chart {
+  text-align: left;
+}
+
+.chart-text {
+  width: 400px;
+  padding: 50px;
+  padding-top: 100px;
+}
+
+.home-row3 {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.home-row3-img {
+  width: 400px;
+  height: 400px;
+}
+
+.home-row3-text {
+  padding: 50px;
+  padding-top: 100px;
+}
+
+.login-donthave-text {
+  padding: 20px;
+  font-weight: 600;
+}
+
+.login-btn2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.row3-head {
+  font-size: 45px;
+}
+
+.row3-subhead {
+  font-size: 20px;
+  text-align: left;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgb(79, 78, 78);
+  padding: 20px;
+  padding-left: 25px;
+}
+
+.home-row3-points {
+  font-size: 18px;
+  text-align: left;
+}
+
+.home-row3-icon {
+  color: #2DD096;
+}
+
+.home-footer-row1 {
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+}
+
+.footer-media-icon1 {
+  color: rgb(85, 116, 239) !important;
+  border: 1px solid rgb(29, 78, 240) !important;
+  margin: 10px !important;
+}
+
+.footer-media-icon2 {
+  color: rgb(85, 218, 239) !important;
+  border: 1px solid rgb(38, 171, 232) !important;
+  margin: 10px !important;
+}
+
+.footer-media-icon3 {
+  color: rgb(236, 139, 60) !important;
+  border: 1px solid rgb(240, 138, 29) !important;
+  margin: 10px !important;
+}
+
+.footer-media-icon4 {
+  color: rgb(241, 79, 26) !important;
+  border: 1px solid rgb(240, 113, 29) !important;
+  margin: 10px !important;
+}
+
+.footer-head {
+  padding-left: 20px;
+}
+
+.project-name {
+  font-size: 40px;
+  padding-top: 10px;
+  letter-spacing: 0.1rem;
+  padding-left: 10px;
+  font-weight: 800;
+  align-items: center;
+  font-family: 'Alkatra', cursive;
+}
+
+.project-name:hover {
+  font-size: 40px;
+  padding-top: 10px;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  padding-left: 10px;
+  font-weight: 800;
+  align-items: center;
+  font-family: 'Alkatra', cursive;
+}
+
+.email-form {
+  display: grid;
+  width: 700px;
+  height: 500px;
+  margin: 50px auto;
+  padding: 15px;
+  box-shadow: 5px 10px 15px 10px rgb(222, 219, 219) !important;
+}
+
+.Email-head {
+  background-color: #2DD096;
+  font-size: 25px;
+  padding: 10px;
+  text-align: left;
+  font-weight: 800;
+  font-family: 'Alkatra', cursive;
+  color: white;
+}
+
+.email-btn {
+  height: 50px;
+  background-color: #2DD096;
+  color: white;
+  font-size: 20px;
+  width: 18%;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Alkatra', cursive;
+  letter-spacing: 0.1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .email-form {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    padding: 15px;
+    box-shadow: 5px 10px 15px 10px rgb(222, 219, 219) !important;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Bar {
+    width: 500px;
+    height: 700px;
+  }
+
+  .login-form {
+    display: grid;
+    width: 350px;
+    gap: 20px;
+  }
+
+  .login-card {
+    width: 70%;
+    height: fit-content;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px;
+    box-shadow: 5px 10px 15px 10px rgb(222, 219, 219) !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .email-form {
+    display: grid;
+    width: 300px;
+    height: 500px;
+    margin: 50px auto;
+    padding: 15px;
+    box-shadow: 5px 10px 15px 10px rgb(222, 219, 219) !important;
+  }
+
+  .email-btn {
+    height: 50px;
+    background-color: #2DD096;
+    color: white;
+    font-size: 20px;
+    width: 28%;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Alkatra', cursive;
+    letter-spacing: 0.1rem;
+  }
+
+  .Bar {
+    width: 300px;
+    height: 500px;
+  }
+
+  .login-form {
+    display: grid;
+    width: 150px;
+  }
+
+  .login-card {
+    width: 70%;
+    margin: 20px auto;
+    height: fit-content;
+    box-shadow: 5px 10px 15px 10px rgb(222, 219, 219) !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .home-row1-image {
+    visibility: hidden;
   }
 }
