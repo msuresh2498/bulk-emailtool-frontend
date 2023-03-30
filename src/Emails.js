@@ -2,6 +2,7 @@ import { TextField } from '@mui/material'
 import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form';
 import Alert from '@mui/material/Alert';
+import { API } from './global';
 
 
 const EmailSending = () => {
@@ -14,7 +15,7 @@ const EmailSending = () => {
     // Email Data Fetching frontend to the Backend
     const sendEmail = async (event) => {
         event.preventDefault();
-        const result = await fetch('http://localhost:5000/email', {
+        const result = await fetch(`${API}/email`, {
             method: "POST",
             headers: {
                 "content-type": "application/json"

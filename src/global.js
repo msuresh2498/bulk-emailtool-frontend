@@ -1,0 +1,1 @@
+export const API = "https://bulk-email-tool-backend-6gir.vercel.app"

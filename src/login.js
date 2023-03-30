@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import { API } from './global';
 
 //Form Validation using YUP
 const formValidationSchema = Yup.object({
@@ -22,8 +23,8 @@ const Login = () => {
         },
         //Login Authendication
         validationSchema: formValidationSchema,
-        onSubmit: (data) => {
-            axios.post('http://localhost:5000/login', data)
+        onSubmit: async (data) =>{
+            await axios.post(`${API}/login`, data)
                 .then(res => {
                     localStorage.setItem('auth', JSON.stringify(res.data));
                     alert('login successfully')

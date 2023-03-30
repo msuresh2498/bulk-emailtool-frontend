@@ -6,6 +6,7 @@ import Form from 'react-bootstrap/Form';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import { API } from './global';
 
 
 //form Validation
@@ -30,13 +31,12 @@ const Signup = () => {
         //User Registration
         validationSchema:formValidationSchema ,
         onSubmit: data => {
-            axios.post("http://localhost:5000/signup", data)
+            axios.post(`${API}/signup`, data)
                 .then(res => navigate('/login'))
                 .catch(err => {
                     toast.error(err.response.data);
                 })
         }
-
     })
 
     return (
