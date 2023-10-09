@@ -25,7 +25,7 @@ const HomePage = () => {
                         className='home-card-img'
                         component="img"
                         alt="green iguana"
-                        image='https://www.trueofficelearning.com/hubfs/%5BSBM%5D%20Blog%20Images/Are%20Your%20Employees%20Using%20Electronic%20Communications%20Appropriately.jpg'
+                        image='https://videosdiebegeistern.com/wp-content/uploads/2019/08/Email-Marketing.jpg'
                     />  </div>
             </div>
 
